@@ -1,0 +1,12 @@
+{
+  "domain": "eight_sleep",
+  "name": "Eight Sleep",
+  "codeowners": ["@ravigadad"],
+  "config_flow": true,
+  "dependencies": [],
+  "documentation": "https://github.com/ravigadad/eight_sleep",
+  "iot_class": "cloud_polling",
+  "issue_tracker": "https://github.com/ravigadad/eight_sleep/issues",
+  "requirements": ["eight-sleep-client @ git+https://github.com/ravigadad/eight_sleep_client.git"],
+  "version": "0.1.0"
+}

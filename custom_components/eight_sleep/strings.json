@@ -1,0 +1,25 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Eight Sleep",
+        "description": "Enter your Eight Sleep account credentials.",
+        "data": {
+          "email": "Email",
+          "password": "Password"
+        },
+        "data_description": {
+          "email": "The email address for your Eight Sleep account.",
+          "password": "The password for your Eight Sleep account."
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "Invalid email or password.",
+      "cannot_connect": "Unable to connect to Eight Sleep."
+    },
+    "abort": {
+      "already_configured": "This account is already configured."
+    }
+  }
+}
