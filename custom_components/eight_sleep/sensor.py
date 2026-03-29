@@ -40,10 +40,9 @@ class NextAlarmSensor(EightSleepEntity, SensorEntity):
         if not alarms:
             return None
 
-        enabled = [a for a in alarms if a.enabled]
-        if not enabled:
+        upcoming = [a for a in alarms if a.enabled and a.next_timestamp]
+        if not upcoming:
             return None
 
-        # Sort by next_timestamp to find the soonest alarm
-        soonest = min(enabled, key=lambda a: a.next_timestamp)
+        soonest = min(upcoming, key=lambda a: a.next_timestamp)
         return soonest.next_timestamp
